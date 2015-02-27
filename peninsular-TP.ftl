@@ -559,6 +559,16 @@ jQuery(window).resize(function() {
    //$(".videoAndTileHolder").height($("#peninsularplayer").width() * holder_ratio );
 });
 
+$(".close").click(function() {
+  
+ if ($('.service-messages-extended').length < 1 ) {
+    $("body").css('background-position', 'center 108px'); 
+      } 
+      else  {
+    $("body").css('background-position', 'center 144px'); 
+      }
+});
+
 $(document).ready(function(){
 
   fixSocialMedia();
@@ -567,33 +577,22 @@ $(document).ready(function(){
   swapCity(1);
   loadProducts();
 
-  $( ".close" ).click(function() {
-  
- if ($('.service-messages-extended').length < 1 && $('.cookie-policy').length  < 1 ) {
-    $("body").css('background-position', 'center 108px'); console.log('this')
-      } 
-      else if ($('.service-messages-extended').length > 0 && $('.cookie-policy').length  > 0) {
-          $("body").css('background-position', 'center 198px'); console.log('this2')
-      }
-      else  {
-    $("body").css('background-position', 'center 144px'); console.log('this3')
-      }
 });
 
   
 $(window).load(function() {
   
   if ($('.service-messages-extended').length < 1 && $('.cookie-policy').length  < 1 ) {
-    $("body").css('background-position', 'center 108px'); console.log('this')
+    $("body").css('background-position', 'center 108px'); 
       } 
       else if ($('.service-messages-extended').length > 0 && $('.cookie-policy').length  > 0) {
-          $("body").css('background-position', 'center 198px'); console.log('this2')
+          $("body").css('background-position', 'center 198px'); 
       }
       else  {
-    $("body").css('background-position', 'center 144px'); console.log('this3')
+    $("body").css('background-position', 'center 144px'); 
       }
   });
-   });
+
   
 
     </script>
