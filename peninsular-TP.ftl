@@ -593,6 +593,7 @@ $(window).load(function() {
     $("body").css('background-position', 'center 144px'); console.log('this3')
       }
   });
+   });
   
 
     </script>
