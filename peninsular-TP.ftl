@@ -592,8 +592,6 @@ $(window).load(function() {
       }
   });
   
-});
-
 
     </script>
   </body>
