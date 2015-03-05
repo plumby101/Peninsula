@@ -24,7 +24,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 .slidetext {padding: 10px 0 0 0; line-height: 14px}
 .carouselholder {width: 950px; position: relative; margin-top: 20px; border-bottom: 1px solid #cccccc; height: 140px}
 .carousel div {margin: 0 10px 0 0}
-.leftarrow {width: 26px; height: 124px; display: block; background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/carousel-arrow_left@2x.png) no-repeat center; position: absolute; top:0; left: 0;  background-size: 100% }
+.leftarrow {width: 26px; height: 124px; display: block; background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/carousel-arrow_left@2x.png) no-repeat center; position: absolute; top:0; left: 0;  background-size: 100% ; z-index: 50}
 .rightarrow {width: 26px; height: 124px; display: block; background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/carousel-arrow_right@2x.png) no-repeat center;position: absolute; top:0; left: 920px;  background-size: 100%  }
 .slidefade {background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/slidefade.png); position: absolute; top: 0; left: 892px; z-index: 5; width: 38px; height: 119px}
 .slidefadeleft {background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/slidefadeleft.png); position: absolute; top: 0; left: 24px; z-index: 5; width: 38px; height: 119px; display: none}
@@ -36,17 +36,18 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 .photoRow {display: none; clear:both}
 #row0, #row1, #row2, #row3 {display:block}
 
-.peninsularProductRepeater {width: 230px; margin-right: 7px; height:480px; float:left; position: relative;overflow: hidden; position: relative; text-align: center}
+.peninsularProductRepeater {width: 230px; margin-right: 7px; height:360px; float:left; position: relative;overflow: hidden; position: relative; text-align: center}
 .peninsularProductImage {width: 237px; float:left; margin:0 3px;overflow: hidden;width:230px; height: 265px }
 .peninsularProductTitle {font-family: GillSans !important ; font-size: 12px; font-weight: bold; text-align: left; width: 237px;margin:25px 0 0 0; float: left;}
 .peninsularProductDescription, .peninsularProductPrice {font-family: arial; font-size: 12px; text-align: left; width: 217px; margin:2px 0 0 0;}
 .peninsularProductTitle a, .peninsularProductDescription a{color: #000000; text-decoration: none}
+.peninsularProducts {margin-left: 10px}
 
 .slug {font-family: gillsans; border: 1px solid #999;color:#666;font-size: 10px;padding: 1px 5px;position: relative;top: 4px;text-transform: uppercase;letter-spacing: 1px; margin:0 auto; display: none}
 
-.peninsularImageHolder img {margin-right: 60px}
+.peninsularImageHolder img {margin-right: 60px; float: left}
 
-.productHolder {margin-top: 30px}
+.productHolder {margin-top: 30px; position: relative;}
 .videoAndTileHolder {height: 589px}
 .peninsulartitle {position: absolute; top: 18px; width: 100%; height: 30px; font-family: "ModernNAP-Text"; font-size: 24px; text-align: center; text-transform: uppercase;}
 .peninsularStrapline { width: 90%; left:5%; font-family: gillsanslight; position: absolute; top: 52px; text-align: center; font-size: 16px}
@@ -75,10 +76,12 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 
 
 .contentsliderVideo iframe {  position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-
+.productIntro {width: 100%; text-align: center; gillsanslight;font-size: 12px; padding: 15px 0; text-transform: uppercase; }
 
 
 @media (max-width: 768px) {
+
+  .productHolder {margin-top: 30px; position: relative}
 
   .carousel {height: 170px}
 
@@ -107,6 +110,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 .contentcarouselholder {position: relative; width: 96%; left: 2%}
 
 .contentcarouselholder {display: none !important}
+
 
   body {background: none !important; background-color: none}
   .holder{float: left}
@@ -169,17 +173,17 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
         <div class="slidefade"></div>
         <a class="leftarrow" href="javascript:$('.carousel').slickPrev();"><a>
       <div class="carousel">
-        <div><a href="javascript:swapCity(1)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/1.jpg" width="150px" height="84px" /><div class="slidetext">${message("city1.title_" + language)}</div></a></div>
-        <div><a href="javascript:swapCity(2)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/2.jpg" width="150px" height="84px" /><div class="slidetext">${message("city2.title_" + language)}</div></a></div>
-        <div><a href="javascript:swapCity(3)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/3.jpg" width="150px" height="84px" /><div class="slidetext">${message("city3.title_" + language)}</div></a></div>
-        <div><a href="javascript:swapCity(4)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/4.jpg" width="150px" height="84px" /><div class="slidetext">${message("city4.title_" + language)}</div></a></div>
-        <div><a href="javascript:swapCity(5)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/5.jpg" width="150px" height="84px" /><div class="slidetext">${message("city5.title_" + language)}</div></a></div>
-        <div><a href="javascript:swapCity(6)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/6.jpg" width="150px" height="84px" /><div class="slidetext">${message("city6.title_" + language)}</div></a></div>
+        <div><a href="javascript:swapCity(1)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/1_${message(language)}.jpg" width="150px" height="84px"   /><div class="slidetext">${message("city1.title_" + language)}</div></a></div>
+        <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/2_${message(language)}.jpg" width="150px" height="84px"  /><div class="slidetext">${message("city2.title_" + language)}</div></a></div>
+        <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/3_${message(language)}.jpg" width="150px" height="84px" /><div class="slidetext">${message("city3.title_" + language)}</div></a></div>
+        <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/4_${message(language)}.jpg" width="150px" height="84px" /><div class="slidetext">${message("city4.title_" + language)}</div></a></div>
+        <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/5_${message(language)}.jpg" width="150px" height="84px" /><div class="slidetext">${message("city5.title_" + language)}</div></a></div>
+       <!-- <div><a href="javascript:swapCity(6)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/6.jpg" width="150px" height="84px" /><div class="slidetext">${message("city6.title_" + language)}</div></a></div>
         <div><a href="javascript:swapCity(7)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/7.jpg" width="150px" height="84px" /><div class="slidetext">${message("city7.title_" + language)}</div></a></div>
         <div><a href="javascript:swapCity(8)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/8.jpg" width="150px" height="84px" /><div class="slidetext">${message("city8.title_" + language)}</div></a></div>
         <div><a href="javascript:swapCity(9)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/9.jpg" width="150px" height="84px" /><div class="slidetext">${message("city9.title_" + language)}</div></a></div>
-        <div><a href="javascript:swapCity(10)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/10.jpg" width="150px" height="84px" /><div class="slidetext">${message("city10.title_" + language)}</div></a></div>
-       
+        <div><a href="javascript:swapCity(10)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/10.jpg" width="150px" height="84px" /><div class="slidetext">${message("city10.title_" + language)}</div></a></div>-->
+
       </div>
       <a class="rightarrow" href="javascript:$('.carousel').slickNext();"><a>
     </div>
@@ -188,42 +192,67 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
       <a class="leftarrowcontent" href="javascript:$('.contentcarousel').slickPrev();"><a>
     <div class="contentcarousel">
         <div class="contentslide" id="slide1"> 
-          <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_1_${message(language)}.jpg">
+          <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_1_${message(language)}.jpg" usemap="#Paris1">
+          
         </div>
 
         <div class="contentslide" id="slide2"> 
-         <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_2_${message(language)}.jpg">
+         <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_2_${message(language)}.jpg" usemap="#Paris2">
+       
         </div>
 
         <div class="contentslide" id="slide3"> 
-          <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_3_${message(language)}.jpg">
+          <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_3_${message(language)}.jpg" usemap="#Paris3">
+        
        </div>
 
-       <div class="contentslide" id="slide4"> 
+       <!--<div class="contentslide" id="slide4"> 
          <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_4_${message(language)}.jpg">
-       </div>
+       </div>-->
        
   </div>
   <a class="rightarrowcontent" href="javascript:$('.contentcarousel').slickNext();"><a>
       </div>
 
-    <div class="productHolder">
+
+      <div class="productIntro">${message("product_intro_" + language)} </div>
+
+    <div class="productHolder"><a class="leftarrow" href="javascript:void(0)" onclick="$('.peninsularProducts').slickPrev();" ><a>
       <div class="peninsularProducts">
 
        
    
-      </div>
+      </div><a class="rightarrow" href="javascript:void(0)" onclick="$('.peninsularProducts').slickNext();"><a>
     </div>
 
 
   </div>
+   <map name="Paris1" id="Paris1">
+  <area shape="rect" coords="369,496,527,511" href="http://pubads.g.doubleclick.net/gampad/clk?id=407896391&amp;iu=/9237/netaporter/creativesolutions" />
+</map>
+
+  <map name="Paris2" id="Paris2">
+  <area shape="rect" coords="157,158,292,178" href="http://pubads.g.doubleclick.net/gampad/clk?id=407896391&amp;iu=/9237/netaporter/creativesolutions" />
+  <area shape="rect" coords="719,170,840,184" href="http://lapatisseriedesreves.com/" />
+  <area shape="rect" coords="776,213,857,232" href="http://www.lespinces.com/" />
+  <area shape="rect" coords="718,282,879,295" href="http://lestablettesjeanlouisnomicos.com/" />
+  <area shape="rect" coords="758,375,845,389" href="http://cristalroom.com/" />
+</map>
+
+  <map name="Paris3" id="Paris3">
+  <area shape="rect" coords="382,419,690,488" href="http://www.fondationlouisvuitton.fr/" />
+  <area shape="rect" coords="719,247,824,262" href="http://www.palaisgalliera.paris.fr/" />
+  <area shape="rect" coords="715,342,807,358" href="http://www.clublebaron.com/" />
+  <area shape="rect" coords="719,408,799,425" href="http://www.noel-paris.com/" />
+  <area shape="rect" coords="718,486,790,502" href="http://www.pad-fairs.com/paris/" />
+</map>
     <script>
 
-cityOverlayTitles = [ "${message("city1.title_" + language)}", "${message("city2.title_" + language)}", "${message("city3.title_" + language)}", "${message("city4.title_" + language)}", "${message("city5.title_" + language)}", "${message("city6.title_" + language)}", "${message("city7.title_" + language)}", "${message("city8.title_" + language)}", "${message("city9.title_" + language)}", "${message("city10.title_" + language)}"];
+cityOverlayTitles = [ "${message("city1.strapline_" + language)}", "${message("city2.strapline_" + language)}", "${message("city3.strapline_" + language)}", "${message("city4.strapline_" + language)}", "${message("city5.strapline_" + language)}", "${message("city6.strapline_" + language)}", "${message("city7.strapline_" + language)}", "${message("city8.strapline_" + language)}", "${message("city9.strapline_" + language)}", "${message("city10.strapline_" + language)}"];
 
 cityOverlaySubTitles = [ "${message("city1.description_" + language)}", "${message("city2.description_" + language)}", "${message("city3.description_" + language)}", "${message("city4.description_" + language)}", "${message("city5.description_" + language)}", "${message("city6.description_" + language)}", "${message("city7.description_" + language)}", "${message("city8.description_" + language)}", "${message("city9.description_" + language)}","${message("city10.description_" + language)}"];
 
-cityProductLists = ["/Shop/Designers/adidas_by_Stella_McCartney", "/Shop/List/Heroine_pieces","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/List/Heroine_pieces","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney",]
+cityProductLists = ["/Shop/List/The_Peninsula_Paris", "/Shop/List/The_Peninsula_Paris","/Shop/List/The_Peninsula_Paris","/Shop/List/Heroine_pieces","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney","/Shop/Designers/adidas_by_Stella_McCartney",]
 
 
 if ($('.l-service-message-extended-wrapper').length < 1) {
@@ -278,10 +307,10 @@ function swapCityText(cityID) {
 
 function swapCityslides(cityID) {
 
-  $('#slide1').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_1_" + "${message(language)}.jpg' />")
-  $('#slide2').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_2_" + "${message(language)}.jpg' />")
-  $('#slide3').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_3_" + "${message(language)}.jpg' />")
-  $('#slide4').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_4_" + "${message(language)}.jpg' />")
+  $('#slide1').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_1_" + "${message(language)}.jpg' usemap='#Paris1'>")
+  $('#slide2').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_2_" + "${message(language)}.jpg' usemap='#Paris2'/>")
+  $('#slide3').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_3_" + "${message(language)}.jpg' usemap='#Paris3'/>")
+  //'#slide4').html("<img src='/alfresco/nap/webAssets/webPage/Peninsular/slide_" + cityID + "_4_" + "${message(language)}.jpg' />")
 
 }
 
@@ -291,9 +320,61 @@ function swapCity(cityID) {
   swapCityText(cityID);
   loadProducts(cityID) ;
   swapCityslides(cityID);
-  $('.contentcarousel').slickGoTo('1');
+  $('.contentcarousel').slickGoTo('0');
 
 }
+
+
+function carouselTheProducts() {
+
+    if ($(window).width() >768) {
+  
+    $(".peninsularProducts").slick({
+    dots:false,
+    infinite: true,
+    slidesToShow: 4,
+    onAfterChange: function(e){
+   
+      if (e.currentSlide == 0) {
+        //$(".leftarrow").fadeOut()
+        //$(".rightarrow").fadeIn()
+       
+     
+      if (e.currentSlide == 1) {
+      // $(".leftarrow").fadeIn()
+      // $(".rightarrow").fadeIn()
+       
+      }
+
+      if (e.currentSlide == 2) {
+       //$(".leftarrow").fadeIn()
+       // $(".rightarrow").fadeOut()
+       
+      }
+    }},
+    responsive: [
+    
+    {
+      breakpoint: 890,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    },
+     {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        arrows: false
+      }
+    }
+  ]
+  });
+    }
+}
+
 
 
 function loadProducts(listID) {
@@ -301,7 +382,7 @@ function loadProducts(listID) {
 soldout = String("${message("peninsular_soldout_" + language)}")
 
   $(".peninsularProducts").html("")
-  listID = listID + 1
+  listID = listID -1
 
 
 if ($(window).width() > 767){
@@ -321,7 +402,7 @@ $.ajax({
 
           i = i+1
         
-          if (i  > 10) {return false;}
+        
         
           altimage = $(this).attr("altImage").substr(0, 2);
 
@@ -337,7 +418,10 @@ $.ajax({
           } else {
 
             $(".peninsularProducts").prepend("<div class='peninsularProductRepeater'><div class='peninsularProductImage' onmouseover='javascript:productHover("+$(this).attr("id")+")' onmouseout='javascript:productHoverOut("+$(this).attr("id")+")' id='product"+$(this).attr("id")+"' ><div class='peninsularImageHolder'><a href='/product/" + $(this).attr("id") + "'><img src='http://www.net-a-porter.com/images/products/" + $(this).attr("id") + "/" + $(this).attr("id") + "_in_sl.jpg'/><img src='http://www.net-a-porter.com/images/products/" + $(this).attr("id") + "/" + $(this).attr("id") + "_ou_sl.jpg'/></a></div> </div><div id="+ $(this).attr("id") +"><div class='peninsularProductTitle'><a href='/product/" + $(this).attr("id") + "'>" + $(this).attr("manufacturer") + "</a></div></div><div class='peninsularProductDescription'>" + $(this).attr("title") + "</div><div class='peninsularProductPrice'>" + $(this).attr("currentPrice") + "</div></div>")    
-                };   
+                };  
+          if (i  > 6) {
+              carouselTheProducts();
+            return false;} 
 
       }
         
@@ -361,7 +445,7 @@ $.ajax({
 
          i = i+1
         
-          if (i  > 10) {return false;}
+        
 
         
         altimage = $(this).attr("altImage").substr(0, 2);
@@ -378,6 +462,10 @@ $.ajax({
 
           $(".peninsularProducts").prepend("<div class='peninsularProductRepeater'><div class='peninsularProductImage' onmouseover='javascript:productHover("+$(this).attr("id")+")' onmouseout='javascript:productHoverOut("+$(this).attr("id")+")' onclick='getHref(" + $(this).attr("id") + ")' id='product"+$(this).attr("id")+"' ><div class='peninsularImageHolder'><a href='/product/" + $(this).attr("id") + "'><img src='http://www.net-a-porter.com/images/products/" + $(this).attr("id") + "/" + $(this).attr("id") + "_in_sl.jpg'/></a></div></div><div id="+ $(this).attr("id") +"><div class='peninsularProductTitle'><a href='/product/" + $(this).attr("id") + "'>" + $(this).attr("manufacturer") + "</a></div></div><div class='peninsularProductDescription'>" + $(this).attr("title") + "</div><div class='peninsularProductPrice'>" + $(this).attr("currentPrice") + "</div></div>")    
                 };   
+        
+          if (i  > 7) {
+  carouselTheProducts();
+            return false;}
 
       }
         
@@ -504,6 +592,16 @@ function loadCarousels() {
   ]
   });
 
+$(".close").click(function() {
+  
+ if ($('.service-messages-extended').length < 1 ) {
+    $("body").css('background-position', 'center 108px'); 
+      } 
+      else  {
+    $("body").css('background-position', 'center 144px'); 
+      }
+});
+
   $(".contentcarousel").slick({
     dots:false,
     infinite: false,
@@ -559,11 +657,12 @@ jQuery(window).resize(function() {
    //$(".videoAndTileHolder").height($("#peninsularplayer").width() * holder_ratio );
 });
 
-$(".close").click(function() {
+  $( ".close" ).click(function() {
   
  if ($('.service-messages-extended').length < 1 ) {
     $("body").css('background-position', 'center 108px'); 
       } 
+    
       else  {
     $("body").css('background-position', 'center 144px'); 
       }
@@ -576,6 +675,7 @@ $(document).ready(function(){
   loadCarousels();
   swapCity(1);
   loadProducts();
+
 
 });
 
@@ -592,7 +692,6 @@ $(window).load(function() {
     $("body").css('background-position', 'center 144px'); 
       }
   });
-
   
 
     </script>
