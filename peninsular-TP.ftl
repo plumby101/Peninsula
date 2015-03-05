@@ -592,7 +592,7 @@ function loadCarousels() {
   ]
   });
 
-$(".close").click(function() {
+ $("div[title=\"close\"]").click(function() {
   
  if ($('.service-messages-extended').length < 1 ) {
     $("body").css('background-position', 'center 108px'); 
