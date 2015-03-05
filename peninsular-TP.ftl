@@ -23,7 +23,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 .carousel a {color: #000000; text-decoration: none}
 .slidetext {padding: 10px 0 0 0; line-height: 14px}
 .carouselholder {width: 950px; position: relative; margin-top: 20px; border-bottom: 1px solid #cccccc; height: 140px}
-.carousel div {margin: 0 10px 0 0}
+.carousel div {margin: 0 10px 0 0; text-align: center;; text-transform: uppercase;}
 .leftarrow {width: 26px; height: 124px; display: block; background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/carousel-arrow_left@2x.png) no-repeat center; position: absolute; top:0; left: 0;  background-size: 100% ; z-index: 50}
 .rightarrow {width: 26px; height: 124px; display: block; background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/carousel-arrow_right@2x.png) no-repeat center;position: absolute; top:0; left: 920px;  background-size: 100%  }
 .slidefade {background: url(/alfresco/nap/webAssets/webPage/Adidas-McCartney/slidefade.png); position: absolute; top: 0; left: 892px; z-index: 5; width: 38px; height: 119px}
@@ -76,7 +76,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 
 
 .contentsliderVideo iframe {  position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.productIntro {width: 100%; text-align: center; gillsanslight;font-size: 12px; padding: 15px 0; text-transform: uppercase; }
+.productIntro {width: 100%; text-align: center; gillSans; font-size: 13px; padding: 15px 0; text-transform: uppercase; }
 
 
 @media (max-width: 768px) {
@@ -173,7 +173,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
         <div class="slidefade"></div>
         <a class="leftarrow" href="javascript:$('.carousel').slickPrev();"><a>
       <div class="carousel">
-        <div><a href="javascript:swapCity(1)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/1_${message(language)}.jpg" width="150px" height="84px"   /><div class="slidetext">${message("city1.title_" + language)}</div></a></div>
+        <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/1_${message(language)}.jpg" width="150px" height="84px"   /><div class="slidetext">${message("city1.title_" + language)}</div></a></div>
         <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/2_${message(language)}.jpg" width="150px" height="84px"  /><div class="slidetext">${message("city2.title_" + language)}</div></a></div>
         <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/3_${message(language)}.jpg" width="150px" height="84px" /><div class="slidetext">${message("city3.title_" + language)}</div></a></div>
         <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/4_${message(language)}.jpg" width="150px" height="84px" /><div class="slidetext">${message("city4.title_" + language)}</div></a></div>
@@ -599,15 +599,7 @@ function loadCarousels() {
   ]
   });
 
- $("div[title~=close]").click(function() {
-  
- if ($('.service-messages-extended').length < 1 ) {
-    $("body").css('background-position', 'center 108px'); 
-      } 
-      else  {
-    $("body").css('background-position', 'center 144px'); 
-      }
-});
+
 
   $(".contentcarousel").slick({
     dots:false,
@@ -698,6 +690,18 @@ $(window).load(function() {
       else  {
     $("body").css('background-position', 'center 144px'); 
       }
+
+$(".inner").bind( "click", function() {
+   if ($('.service-messages-extended').length < 1 ) {
+    $("body").css('background-position', 'center 108px'); 
+      } 
+      else  {
+    $("body").css('background-position', 'center 144px'); 
+      }
+});
+
+
+
   });
   
 
