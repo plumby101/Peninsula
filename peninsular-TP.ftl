@@ -12,7 +12,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 #main {width:100%;}
 #header {margin:0 auto; width:950px; float:none;}
 #content {width:100%!important; background:none !important}
-
+.dropdownMenuBackground {width: 100%; background-color: #ffffff; height: 365px; display: block; position: absolute; top:0px; left:0; z-index: 900; display: none; border-bottom: 1px solid #000000;}
 
 .holder {max-width: 950px; margin: 0 auto; position: relative;}
 .cityholder {position: absolute; height: 450px}
@@ -153,7 +153,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 }
 </style>
 
-  <body>
+  <div class="dropdownMenuBackground"></div>
     <div class="holder">
       <div class="videoAndTileHolder">
         <div class="peninsulartitle">${message("page.title_" + language)}</div>
@@ -260,6 +260,13 @@ if ($('.l-service-message-extended-wrapper').length < 1) {
 }
 
 
+$("#top-nav li").on('mouseenter',function(){
+  $(".dropdownMenuBackground").fadeIn()
+})
+
+$("#top-nav ul").on('mouseleave',function(){
+  $(".dropdownMenuBackground").fadeOut()
+})
       
     
 
@@ -592,7 +599,7 @@ function loadCarousels() {
   ]
   });
 
- $("div[title=\"close\"]").click(function() {
+ $("div[title~=close]").click(function() {
   
  if ($('.service-messages-extended').length < 1 ) {
     $("body").css('background-position', 'center 108px'); 
