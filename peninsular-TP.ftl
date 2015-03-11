@@ -426,7 +426,7 @@ $.ajax({
 
             $(".peninsularProducts").prepend("<div class='peninsularProductRepeater'><div class='peninsularProductImage' onmouseover='javascript:productHover("+$(this).attr("id")+")' onmouseout='javascript:productHoverOut("+$(this).attr("id")+")' id='product"+$(this).attr("id")+"' ><div class='peninsularImageHolder'><a href='/product/" + $(this).attr("id") + "'><img src='http://www.net-a-porter.com/images/products/" + $(this).attr("id") + "/" + $(this).attr("id") + "_in_sl.jpg'/><img src='http://www.net-a-porter.com/images/products/" + $(this).attr("id") + "/" + $(this).attr("id") + "_ou_sl.jpg'/></a></div> </div><div id="+ $(this).attr("id") +"><div class='peninsularProductTitle'><a href='/product/" + $(this).attr("id") + "'>" + $(this).attr("manufacturer") + "</a></div></div><div class='peninsularProductDescription'>" + $(this).attr("title") + "</div><div class='peninsularProductPrice'>" + $(this).attr("currentPrice") + "</div></div>")    
                 };  
-          if (i  > 6) {
+          if (i  > 5) {
               carouselTheProducts();
             return false;} 
 
@@ -470,7 +470,7 @@ $.ajax({
           $(".peninsularProducts").prepend("<div class='peninsularProductRepeater'><div class='peninsularProductImage' onmouseover='javascript:productHover("+$(this).attr("id")+")' onmouseout='javascript:productHoverOut("+$(this).attr("id")+")' onclick='getHref(" + $(this).attr("id") + ")' id='product"+$(this).attr("id")+"' ><div class='peninsularImageHolder'><a href='/product/" + $(this).attr("id") + "'><img src='http://www.net-a-porter.com/images/products/" + $(this).attr("id") + "/" + $(this).attr("id") + "_in_sl.jpg'/></a></div></div><div id="+ $(this).attr("id") +"><div class='peninsularProductTitle'><a href='/product/" + $(this).attr("id") + "'>" + $(this).attr("manufacturer") + "</a></div></div><div class='peninsularProductDescription'>" + $(this).attr("title") + "</div><div class='peninsularProductPrice'>" + $(this).attr("currentPrice") + "</div></div>")    
                 };   
         
-          if (i  > 7) {
+          if (i  > 5) {
   carouselTheProducts();
             return false;}
 
