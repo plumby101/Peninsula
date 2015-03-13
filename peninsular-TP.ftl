@@ -76,8 +76,8 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 
 
 .contentsliderVideo iframe {  position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
-.productIntro {width: 100%; text-align: center; gillSans; font-size: 13px; padding: 15px 0; text-transform: uppercase; }
-
+.productIntro {width: 100%; text-align: center; font-family: gillSans; font-size: 13px; padding: 15px 0; text-transform: uppercase; }
+.slick-slider {border-bottom: 1px solid #cccccc;padding-bottom: 6px;}
 
 @media (max-width: 768px) {
 
@@ -171,7 +171,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
     <div class="carouselholder">
         <div class="slidefadeleft"></div>
         <div class="slidefade"></div>
-        <a class="leftarrow" href="javascript:$('.carousel').slickPrev();"><a>
+        <a class="leftarrow" href="javascript:void(0)" onclick="$('.carousel').slickPrev();"><a>
       <div class="carousel">
         <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/1_${message(language)}.jpg" width="150px" height="84px"   /><div class="slidetext">${message("city1.title_" + language)}</div></a></div>
         <div><a href="#"><img src="/alfresco/nap/webAssets/webPage/Peninsular/2_${message(language)}.jpg" width="150px" height="84px"  /><div class="slidetext">${message("city2.title_" + language)}</div></a></div>
@@ -185,11 +185,11 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
         <div><a href="javascript:swapCity(10)"><img src="/alfresco/nap/webAssets/webPage/Peninsular/10.jpg" width="150px" height="84px" /><div class="slidetext">${message("city10.title_" + language)}</div></a></div>-->
 
       </div>
-      <a class="rightarrow" href="javascript:$('.carousel').slickNext();"><a>
+      <a class="rightarrow"  href="javascript:void(0)" onclick="$('.carousel').slickNext();"><a>
     </div>
 
         <div class="contentcarouselholder">
-      <a class="leftarrowcontent" href="javascript:$('.contentcarousel').slickPrev();"><a>
+      <a class="leftarrowcontent" href="javascript:void(0)" onclick="$('.contentcarousel').slickPrev();"><a>
     <div class="contentcarousel">
         <div class="contentslide" id="slide1"> 
           <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_1_${message(language)}.jpg" usemap="#Paris1">
@@ -211,7 +211,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
        </div>-->
        
   </div>
-  <a class="rightarrowcontent" href="javascript:$('.contentcarousel').slickNext();"><a>
+  <a class="rightarrowcontent" href="javascript:void(0)" onclick="$('.contentcarousel').slickNext();"><a>
       </div>
 
 
@@ -228,23 +228,23 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 
   </div>
    <map name="Paris1" id="Paris1">
-  <area shape="rect" coords="369,496,527,511" href="http://pubads.g.doubleclick.net/gampad/clk?id=407896391&amp;iu=/9237/netaporter/creativesolutions" />
+  <area shape="rect" coords="354,464,614,511" href="http://pubads.g.doubleclick.net/gampad/clk?id=407896391&amp;iu=/9237/netaporter/creativesolutions" target="_blank" />
 </map>
 
   <map name="Paris2" id="Paris2">
-  <area shape="rect" coords="157,158,292,178" href="http://pubads.g.doubleclick.net/gampad/clk?id=407896391&amp;iu=/9237/netaporter/creativesolutions" />
-  <area shape="rect" coords="719,170,840,184" href="http://lapatisseriedesreves.com/" />
-  <area shape="rect" coords="776,213,857,232" href="http://www.lespinces.com/" />
-  <area shape="rect" coords="718,282,879,295" href="http://lestablettesjeanlouisnomicos.com/" />
-  <area shape="rect" coords="758,375,845,389" href="http://cristalroom.com/" />
+  <area shape="rect" coords="113,117,299,204" href="http://pubads.g.doubleclick.net/gampad/clk?id=407896391&amp;iu=/9237/netaporter/creativesolutions" target="_blank" />
+  <area shape="rect" coords="719,156,877,194" href="http://lapatisseriedesreves.com/" target="_blank" />
+  <area shape="rect" coords="718,213,877,237" href="http://www.lespinces.com/" target="_blank" />
+  <area shape="rect" coords="718,261,880,315" href="http://lestablettesjeanlouisnomicos.com/" target="_blank" />
+  <area shape="rect" coords="722,351,888,401" href="http://cristalroom.com/" target="_blank" />
 </map>
 
   <map name="Paris3" id="Paris3">
-  <area shape="rect" coords="382,419,690,488" href="http://www.fondationlouisvuitton.fr/" />
-  <area shape="rect" coords="719,247,824,262" href="http://www.palaisgalliera.paris.fr/" />
-  <area shape="rect" coords="715,342,807,358" href="http://www.clublebaron.com/" />
-  <area shape="rect" coords="719,408,799,425" href="http://www.noel-paris.com/" />
-  <area shape="rect" coords="718,486,790,502" href="http://www.pad-fairs.com/paris/" />
+  <area shape="rect" coords="382,418,690,487" href="http://www.fondationlouisvuitton.fr/" target="_blank" />
+  <area shape="rect" coords="719,218,887,264" href="http://www.palaisgalliera.paris.fr/" target="_blank" />
+  <area shape="rect" coords="715,319,894,358" href="http://www.clublebaron.com/" target="_blank" />
+  <area shape="rect" coords="720,389,889,425" href="http://www.noel-paris.com/" target="_blank" />
+  <area shape="rect" coords="718,461,887,507" href="http://www.pad-fairs.com/paris/" target="_blank" />
 </map>
     <script>
 
