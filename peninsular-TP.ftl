@@ -49,7 +49,7 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 
 .productHolder {margin-top: 30px; position: relative;}
 .videoAndTileHolder {height: 589px}
-.peninsulartitle {position: absolute; top: 18px; width: 100%; height: 30px; font-family: "ModernNAP-Text"; font-size: 24px; text-align: center; text-transform: uppercase;}
+.peninsulartitle {position: absolute; top: 18px; width: 100%; height: 30px; font-family: "ModernNAP-Subhead",'MSung PRC Medium', Arial, "Microsoft YaHei", Hei, Hei Ti, SimHei, STXihei, sans-serif !important; font-size: 24px; text-align: center; text-transform: uppercase;}
 .peninsularStrapline { width: 90%; left:5%; font-family: gillsanslight; position: absolute; top: 52px; text-align: center; font-size: 16px}
 
 .contentslide {width: 950px; height: 528px; position: relative;margin-top: 20px;}
@@ -64,8 +64,8 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
 .contentslidecontent {font-family: gillsanslight; font-size: 14px; line-height: 19px}
 
 .cityImageHolder {z-index: 1; position: absolute;top:0; left: 0}
-.peninsularoverlaytitle{width: 100%;font-size: 38px;font-family: "ModernNAP-Display";text-align: center;color: #000000.;position: absolute;text-transform: uppercase;z-index: 12; line-height: 32px;top: 16px;}
-.peninsularoverlaysubtitle {width: 90%;font-size: 14px;font-family: "ModernNAP-DisplayItalic";text-align: center;color: #000000;position: absolute;top: 90px;z-index: 12; line-height: 19px;padding: 0 5%;}
+.peninsularoverlaytitle{width: 100%;font-size: 38px;font-family: "ModernNAP-Display";text-align: center;color: #000000.;position: absolute;text-transform: uppercase;z-index: 12; line-height: 37px;top: 16px;}
+.peninsularoverlaysubtitle {width: 90%;font-size: 14px;font-family: "ModernNAP-DisplayItalic";text-align: center;color: #000000;position: absolute;top: 90px;z-index: 12; line-height: 16px;padding: 0 5%;}
 .peninsularTextHolder {width: 60%;background-color: #ffffff;position: absolute;top: 140px;z-index: 10;height: 165px;left: 20%; box-shadow: 3px 3px 5px #000000;}
 
 .advertLine1 {position: absolute; width: 140px; height: 45px; top: 240px; left: 25px; font-family: gillsanslight; font-size: 13px; color: #ffffff}
@@ -206,9 +206,9 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
         
        </div>
 
-       <!--<div class="contentslide" id="slide4"> 
-         <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_4_${message(language)}.jpg">
-       </div>-->
+       <div class="contentslide" id="slide4"> 
+         <img src="/alfresco/nap/webAssets/webPage/Peninsular/slide_1_4_${message(language)}.jpg"  usemap="#Paris4">
+       </div>
        
   </div>
   <a class="rightarrowcontent" href="javascript:void(0)" onclick="$('.contentcarousel').slickNext();"><a>
@@ -245,6 +245,11 @@ body {background: url(/alfresco/nap/webAssets/webPage/Peninsular/headerbg.jpg) c
   <area shape="rect" coords="715,319,894,358" href="http://www.clublebaron.com/" target="_blank" />
   <area shape="rect" coords="720,389,889,425" href="http://www.noel-paris.com/" target="_blank" />
   <area shape="rect" coords="718,461,887,507" href="http://www.pad-fairs.com/paris/" target="_blank" />
+</map>
+
+<map name="Paris4" id="Paris4">
+  <area shape="rect" coords="793,154,929,191" href="http://reciproque.fr/" target="_blank" />
+  <area shape="rect" coords="717,227,906,259" href="http://paris.peninsula.com/en/spa-wellness" target="_blank" />
 </map>
     <script>
 
@@ -619,7 +624,7 @@ function loadCarousels() {
        
       }
 
-      if (e.currentSlide == 2) {
+      if (e.currentSlide == 3) {
         $(".leftarrowcontent").fadeIn()
         $(".rightarrowcontent").fadeOut()
       
